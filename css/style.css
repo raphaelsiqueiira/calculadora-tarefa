@@ -147,6 +147,7 @@ input[aria-invalid="false"] {
     padding: 25px; 
     width: 100%;
     max-width: 400px; 
+    margin: 0;
   }
 
   fieldset legend {
