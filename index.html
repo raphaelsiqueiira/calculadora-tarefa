@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Tarefas</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <form id="form" method="get">
+        <fieldset id="contant-container">
+          <legend>Calculadora de Tarefas</legend>
+          <div>
+            <label for="first-task">Primeira Tarefa - Trabalho</label>
+            <input type="number" name="task-work" id="first-task"  placeholder="Tempo da tarefa" aria-required="true" />
+          </div>
+
+          <div>
+            <label for="second-task">Segunda Tarefa - Estudo</label>
+            <input type="number" name="study-task" id="second-task" placeholder="Tempo da tarefa" aria-required="true" />
+          </div>
+
+          <div>
+            <label for="third-task">Terceira Tarefa - Lazer</label>
+            <input type="number" name="leisure" id="third-task" placeholder="Tempo da tarefa" aria-required="true" />
+          </div>
+
+          <div id="error-message" role="alert" style="color: red; display: none" tabindex="-1">
+            <p></p>
+          </div>
+        </fieldset>
+
+        <button type="submit">Calcular Horas</button>
+
+        <span id="total-hours" tabindex="-1" style="display: none"></span>
+      </form>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
